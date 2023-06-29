@@ -15,10 +15,10 @@ const routes: Routes = [
               path: '',
               loadChildren: () => import('../news/news.module').then( m => m.NewsPageModule)
             },
-            // {
-            //   path: ':id',
-            //   loadChildren: () => import('../film-details/film-details.module').then( m => m.FilmDetailsPageModule)
-            // }
+            {
+              path: ':id',
+              loadChildren: () => import('../newsarticles/newsarticles.module').then( m => m.NewsarticlesPageModule)
+            }
           ]
         },
         {
