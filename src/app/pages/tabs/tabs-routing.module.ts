@@ -27,6 +27,10 @@ const routes: Routes = [
             {
               path: '',
               loadChildren: () => import('../sport/sport.module').then( m => m.SportPageModule)
+            },
+            {
+              path: ':id',
+              loadChildren: () => import('../sportarticle/sportarticle.module').then( m => m.SportarticlePageModule)
             }
           ]
         },

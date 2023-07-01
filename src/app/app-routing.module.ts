@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: 'newsarticles',
     loadChildren: () => import('./pages/newsarticles/newsarticles.module').then( m => m.NewsarticlesPageModule)
+  },
+  {
+    path: 'sportarticle',
+    loadChildren: () => import('./pages/sportarticle/sportarticle.module').then( m => m.SportarticlePageModule)
   }
 ];
 
